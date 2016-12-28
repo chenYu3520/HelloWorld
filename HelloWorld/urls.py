@@ -17,9 +17,12 @@ from django.conf.urls import url
 from django.contrib import admin
 from HelloWorld.view import hello;
 from HelloWorld.testdb import testdb;
+from HelloWorld import search;
 
 urlpatterns = [
     url('^hello/$', hello),
     url('^testdb/$', testdb),
+    url(r'^search-form/$', search.search_form),
+    url(r'^search/$', search.search),
     #url(r'^admin/', admin.site.urls),
 ]
