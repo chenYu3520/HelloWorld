@@ -16,8 +16,10 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from HelloWorld.view import hello;
+from HelloWorld.testdb import testdb;
 
 urlpatterns = [
     url('^hello/$', hello),
+    url('^testdb/$', testdb),
     #url(r'^admin/', admin.site.urls),
 ]
